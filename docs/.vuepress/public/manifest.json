@@ -1,10 +1,10 @@
 {
-  "name": "张三",
-  "short_name": "张三",
+  "name": "GL",
+  "short_name": "GL",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#2196f3",
-  "description": "张三的个人主页",
+  "description": "GL's Blog",
   "theme_color": "blue",
   "icons": [
     {

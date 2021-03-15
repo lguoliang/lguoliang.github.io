@@ -1,4 +1,6 @@
 const script = require('./sidebar/script')
+const git = require('./sidebar/git')
+const weapp = require('./sidebar/weapp')
 
 module.exports = {
   port: 8086,
@@ -13,8 +15,10 @@ module.exports = {
       { text: 'Home', link: '/' },
       { text: 'JS', link: '/js/' },
       { text: 'Git', link: '/git/' },
+      { text: 'Mini Program', link: '/weapp/' },
+      { text: 'Other', link: '/other/' },
       {
-        text: 'Other',
+        text: 'Link',
         items: [
           { text: 'External', link: 'https://baidu.com' }
         ]
@@ -22,11 +26,12 @@ module.exports = {
     ],
     sidebar: {
       '/js/': script,
-      '/git/': [{
-        title: 'git',
+      '/git/': git,
+      '/weapp/': weapp,
+      '/other/': [{
+        title: 'other',
         children: [
-          '',
-          'git问题处理'
+          ''
         ]
       }]
     }
