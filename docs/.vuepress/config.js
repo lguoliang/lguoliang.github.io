@@ -29,9 +29,11 @@ module.exports = {
       '/git/': git,
       '/weapp/': weapp,
       '/other/': [{
-        title: 'other',
+        // title: 'other',
+        collapsable: false,
         children: [
-          ''
+          '',
+          '费曼学习法'
         ]
       }]
     }
