@@ -1,6 +1,7 @@
 module.exports = [{
-  title: 'git',
+  title: 'Mini Program',
   children: [
-    ''
+    '',
+    '分包加载'
   ]
 }]
