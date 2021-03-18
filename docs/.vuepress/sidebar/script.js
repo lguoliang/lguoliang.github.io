@@ -68,5 +68,12 @@ module.exports = [
       ['/guide/', 'Performance 工具的使用及注意事项'],
       ['/guide/', '20 个代码层面的优化细节']
     ]
+  },
+  {
+    title: 'JavaScript',
+    children: [
+      'JavaScript内置对象',
+      'Object'
+    ]
   }
 ]
