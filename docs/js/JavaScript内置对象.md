@@ -122,6 +122,9 @@ Math.round() | 舍入到最接近的整数
 Math.max() | 返回最大的参数
 Math.min() | 返回最小的参数
 Math.random() | 返回一个伪随机数
+Math.pow(x, y) | x的y次幂
+Math.sqrt() | 开平方
+Math.PI | π
 Math.E | 算术常量e
 
 ### RegExp对象：
@@ -174,7 +177,7 @@ Number.valueOf() | 返回原始数值
 
 Function | Javascript的函数
 --- | ---
-Function.apply | 将函数作为一个对象的方法调用
+Function.apply() | 将函数作为一个对象的方法调用
 Function.arguments[] | 传递给函数的参数
 Function.call() | 将函数作为对象的方法调用
 Function.caller | 调用当前函数的函数
