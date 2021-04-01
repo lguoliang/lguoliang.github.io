@@ -18,6 +18,7 @@ module.exports = {
       { text: 'Mini Program', link: '/weapp/' },
       { text: 'Git', link: '/git/' },
       { text: 'Npm', link: '/npm/' },
+      { text: 'JQuery', link: '/jquery/' },
       { text: 'Other', link: '/other/' },
       {
         text: 'Link',
@@ -36,12 +37,17 @@ module.exports = {
         '源地址配置',
         'npm包管理'
       ],
+      '/jquery/': [
+        '',
+        '动态修改伪元素content的值'
+      ],
       '/other/': [{
         // title: 'other',
         collapsable: false,
         children: [
           '',
           '费曼学习法',
+          'Vuepress',
           'Gitbook'
         ]
       }]
