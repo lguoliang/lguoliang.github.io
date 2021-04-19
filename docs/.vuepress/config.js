@@ -19,6 +19,7 @@ module.exports = {
       { text: 'Git', link: '/git/' },
       { text: 'Npm', link: '/npm/' },
       { text: 'JQuery', link: '/jquery/' },
+      { text: 'Html', link: '/html/' },
       { text: 'Other', link: '/other/' },
       {
         text: 'Link',
@@ -41,6 +42,14 @@ module.exports = {
         '',
         '动态修改伪元素content的值'
       ],
+      '/html/': [{
+        // title: 'other',
+        collapsable: false,
+        children: [
+          '',
+          'meta整理'
+        ]
+      }],
       '/other/': [{
         // title: 'other',
         collapsable: false,
@@ -48,6 +57,8 @@ module.exports = {
           '',
           '费曼学习法',
           'Vuepress',
+          '开发规范',
+          'UI库搭建',
           'Gitbook'
         ]
       }]
