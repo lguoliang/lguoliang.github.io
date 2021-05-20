@@ -26,6 +26,13 @@ build:    打包
 
 * scope 用来说明本次Commit影响的范围，即简要说明修改会涉及的部分,比如数据层、控制层、视图层等
 * subject 这次提交的简短描述
+  
+## 随机生成commit message
+```bash
+git commit -m"`curl -s http://whatthecommit.com/index.txt`"
+```
+
+
 ## 强制覆盖本地代码：
 
 ```bash

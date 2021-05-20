@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/qr.jpg
 heroText: 随笔~
-tagline: 知其然，知其所以然
+tagline: 知其然，知其所以然。
 # actionText: 快速上手 →
 # actionLink: /zh/guide/
 # features:

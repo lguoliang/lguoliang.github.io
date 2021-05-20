@@ -1,72 +1,44 @@
-const script = require('./sidebar/script')
-const git = require('./sidebar/git')
-const weapp = require('./sidebar/weapp')
-const vueSidebar = require('./sidebar/vueSidebar')
+/**
+ * 顶部导航
+ */
+const nav = [
+  { text: 'Home', link: '/' },
+  { text: 'JS', link: '/js/' },
+  { text: 'Mini Program', link: '/weapp/' },
+  { text: 'Git', link: '/git/' },
+  { text: 'Npm', link: '/npm/' },
+  { text: 'JQuery', link: '/jquery/' },
+  { text: 'Html', link: '/html/' },
+  { text: 'Other', link: '/other/' },
+  {
+    text: 'Link',
+    items: [
+      { text: 'External', link: 'https://baidu.com' }
+    ]
+  }
+]
+/**
+ * 侧边栏菜单
+ */
+const sidebar = {
+  '/js/': require('./sidebar/_js'),
+  '/git/': require('./sidebar/_git'),
+  '/vue/': require('./sidebar/_vue'),
+  '/weapp/': require('./sidebar/_weapp'),
+  '/npm/': require('./sidebar/_npm'),
+  '/jquery/': require('./sidebar/_jquery'),
+  '/html/': require('./sidebar/_html'),
+  '/other/': require('./sidebar/_other')
+}
 
 module.exports = {
   port: 8086,
   title: 'GL\'s Blog', 
-  // description: '知识的贫穷，限制了你的想像力。',
+  description: '知识的贫穷，限制了你的想像力。',
   head: [
     ['link', { rel: 'icon', href: '/img/logo.jpg' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
   ],
-  themeConfig: {
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'JS', link: '/js/' },
-      { text: 'Mini Program', link: '/weapp/' },
-      { text: 'Git', link: '/git/' },
-      { text: 'Npm', link: '/npm/' },
-      { text: 'JQuery', link: '/jquery/' },
-      { text: 'Html', link: '/html/' },
-      { text: 'Other', link: '/other/' },
-      {
-        text: 'Link',
-        items: [
-          { text: 'External', link: 'https://baidu.com' }
-        ]
-      }
-    ],
-    sidebar: {
-      '/js/': script,
-      '/git/': git,
-      '/vue/': vueSidebar,
-      '/weapp/': weapp,
-      '/npm/': [
-        '',
-        '源地址配置',
-        'npm包管理'
-      ],
-      '/jquery/': [
-        '',
-        '动态修改伪元素content的值'
-      ],
-      '/html/': [{
-        // title: 'other',
-        collapsable: false,
-        children: [
-          '',
-          'meta整理'
-        ]
-      }],
-      '/other/': [{
-        // title: 'other',
-        collapsable: false,
-        children: [
-          '',
-          '费曼学习法',
-          'Vuepress',
-          '开发规范',
-          'UI库搭建',
-          'Gitbook'
-        ]
-      }]
-    }
-  },
-  // plugins: {
-  //   '@vuepress/back-to-top': true,
-  //   '@vuepress/last-updated': true
-  // }
+  themeConfig: { nav, sidebar },
   plugins: ['@vuepress/back-to-top', '@vuepress/last-updated', '@vuepress/blog']
 }
