@@ -3,6 +3,7 @@
  */
 const nav = [
   { text: 'Home', link: '/' },
+  { text: 'Standard', link: '/standard/' },
   { text: 'JS', link: '/js/' },
   { text: 'Mini Program', link: '/weapp/' },
   { text: 'Git', link: '/git/' },
@@ -21,6 +22,7 @@ const nav = [
  * 侧边栏菜单
  */
 const sidebar = {
+  '/standard/': require('./sidebar/_standard'),
   '/js/': require('./sidebar/_js'),
   '/git/': require('./sidebar/_git'),
   '/vue/': require('./sidebar/_vue'),
@@ -39,6 +41,9 @@ module.exports = {
     ['link', { rel: 'icon', href: '/img/logo.jpg' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
   ],
-  themeConfig: { nav, sidebar },
+  themeConfig: { nav, sidebar, sidebarDepth: 2 },
+  // markdown: {
+  //   extractHeaders: [ 'h2', 'h3', 'h4','h5','h6' ]
+  // },
   plugins: ['@vuepress/back-to-top', '@vuepress/last-updated', '@vuepress/blog']
 }

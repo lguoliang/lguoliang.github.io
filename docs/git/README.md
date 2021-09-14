@@ -40,3 +40,14 @@ git commit -m"`curl -s http://whatthecommit.com/index.txt`"
 git reset --hard origin/master
 ```
 
+## fetch
+```bash
+git remote add upstream ssh://git@120.78.197.207:7999/yqp/yqp-sa.git
+
+git fetch upstream
+
+git merge upstream/master
+
+```
+[git](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
+
