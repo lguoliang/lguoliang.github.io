@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git 常用 | GL&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/logo.jpg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="知识的贫穷，限制了你的想像力。">
+    
+    <link rel="preload" href="/assets/css/0.styles.b4c82722.css" as="style"><link rel="preload" href="/assets/js/app.9c99df4e.js" as="script"><link rel="preload" href="/assets/js/2.a25f81b5.js" as="script"><link rel="preload" href="/assets/js/9.da4b5ab4.js" as="script"><link rel="prefetch" href="/assets/js/10.9ee2e167.js"><link rel="prefetch" href="/assets/js/11.2b0a1716.js"><link rel="prefetch" href="/assets/js/12.44aff3e5.js"><link rel="prefetch" href="/assets/js/13.d4a05e4a.js"><link rel="prefetch" href="/assets/js/14.3b2288e9.js"><link rel="prefetch" href="/assets/js/15.59c8fa8e.js"><link rel="prefetch" href="/assets/js/16.326ca383.js"><link rel="prefetch" href="/assets/js/17.23880aae.js"><link rel="prefetch" href="/assets/js/18.5f0454af.js"><link rel="prefetch" href="/assets/js/19.6418e303.js"><link rel="prefetch" href="/assets/js/20.582af794.js"><link rel="prefetch" href="/assets/js/21.31beb223.js"><link rel="prefetch" href="/assets/js/22.3c5a858f.js"><link rel="prefetch" href="/assets/js/23.6988d70d.js"><link rel="prefetch" href="/assets/js/24.2c750665.js"><link rel="prefetch" href="/assets/js/25.4acac359.js"><link rel="prefetch" href="/assets/js/26.c82d37d6.js"><link rel="prefetch" href="/assets/js/27.601bcdb2.js"><link rel="prefetch" href="/assets/js/28.bda2352e.js"><link rel="prefetch" href="/assets/js/29.8ade9f0e.js"><link rel="prefetch" href="/assets/js/3.0a891b7d.js"><link rel="prefetch" href="/assets/js/30.a6393214.js"><link rel="prefetch" href="/assets/js/31.062a32e9.js"><link rel="prefetch" href="/assets/js/32.21351999.js"><link rel="prefetch" href="/assets/js/33.594d9466.js"><link rel="prefetch" href="/assets/js/34.fb256ca9.js"><link rel="prefetch" href="/assets/js/35.b70bde82.js"><link rel="prefetch" href="/assets/js/36.74be65d4.js"><link rel="prefetch" href="/assets/js/37.f6597fe2.js"><link rel="prefetch" href="/assets/js/38.3f1a2d9b.js"><link rel="prefetch" href="/assets/js/39.a5724aea.js"><link rel="prefetch" href="/assets/js/4.d9b82eb6.js"><link rel="prefetch" href="/assets/js/40.6d916d9a.js"><link rel="prefetch" href="/assets/js/41.a55a6133.js"><link rel="prefetch" href="/assets/js/42.9aae29a6.js"><link rel="prefetch" href="/assets/js/43.9160c3a6.js"><link rel="prefetch" href="/assets/js/44.7b1e5a90.js"><link rel="prefetch" href="/assets/js/45.4a86b0f5.js"><link rel="prefetch" href="/assets/js/46.6326653c.js"><link rel="prefetch" href="/assets/js/47.af38370b.js"><link rel="prefetch" href="/assets/js/48.fe7e2ecf.js"><link rel="prefetch" href="/assets/js/49.dfd840e5.js"><link rel="prefetch" href="/assets/js/5.7a9c5835.js"><link rel="prefetch" href="/assets/js/50.594c369c.js"><link rel="prefetch" href="/assets/js/51.cbd66c3e.js"><link rel="prefetch" href="/assets/js/52.08e01c48.js"><link rel="prefetch" href="/assets/js/53.986458e3.js"><link rel="prefetch" href="/assets/js/54.4463a6fa.js"><link rel="prefetch" href="/assets/js/55.b7bdda20.js"><link rel="prefetch" href="/assets/js/56.adba2a43.js"><link rel="prefetch" href="/assets/js/57.dfb018c4.js"><link rel="prefetch" href="/assets/js/58.4f156132.js"><link rel="prefetch" href="/assets/js/59.a6762f00.js"><link rel="prefetch" href="/assets/js/6.5917e902.js"><link rel="prefetch" href="/assets/js/7.bb48003e.js"><link rel="prefetch" href="/assets/js/8.c75c77ab.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b4c82722.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GL's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="menu" class="dropdown-title"><span class="title">menu</span> <span class="arrow down"></span></button> <button type="button" aria-label="menu" class="mobile-dropdown-title"><span class="title">menu</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weapp/" class="nav-link">
+  Mini Program
+</a></li><li class="dropdown-item"><!----> <a href="/html/" class="nav-link">
+  Html
+</a></li><li class="dropdown-item"><!----> <a href="/git/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/npm/" class="nav-link">
+  Npm
+</a></li><li class="dropdown-item"><!----> <a href="/jquery/" class="nav-link">
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/standard/" class="nav-link">
+  Standard
+</a></li><li class="dropdown-item"><!----> <a href="/src/question/" class="nav-link">
+  Question
+</a></li><li class="dropdown-item"><!----> <a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="menu" class="dropdown-title"><span class="title">menu</span> <span class="arrow down"></span></button> <button type="button" aria-label="menu" class="mobile-dropdown-title"><span class="title">menu</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/weapp/" class="nav-link">
+  Mini Program
+</a></li><li class="dropdown-item"><!----> <a href="/html/" class="nav-link">
+  Html
+</a></li><li class="dropdown-item"><!----> <a href="/git/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/npm/" class="nav-link">
+  Npm
+</a></li><li class="dropdown-item"><!----> <a href="/jquery/" class="nav-link">
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/standard/" class="nav-link">
+  Standard
+</a></li><li class="dropdown-item"><!----> <a href="/src/question/" class="nav-link">
+  Question
+</a></li><li class="dropdown-item"><!----> <a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>git</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/git/" aria-current="page" class="active sidebar-link">Git 常用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/git/#提交规范" class="sidebar-link">提交规范</a></li><li class="sidebar-sub-header"><a href="/git/#随机生成commit-message" class="sidebar-link">随机生成commit message</a></li><li class="sidebar-sub-header"><a href="/git/#强制覆盖本地代码" class="sidebar-link">强制覆盖本地代码：</a></li><li class="sidebar-sub-header"><a href="/git/#fetch" class="sidebar-link">fetch</a></li><li class="sidebar-sub-header"><a href="/git/#git-重新关联远程仓库地址的三种方法" class="sidebar-link">Git 重新关联远程仓库地址的三种方法</a></li></ul></li><li><a href="/git/git问题处理.html" class="sidebar-link">git问题处理</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-常用"><a href="#git-常用" class="header-anchor">#</a> Git 常用</h1> <h2 id="提交规范"><a href="#提交规范" class="header-anchor">#</a> 提交规范</h2> <p><a href="https://github.com/streamich/git-cz" target="_blank" rel="noopener noreferrer">git-cz<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>type<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>scope<span class="token operator">&gt;</span><span class="token punctuation">)</span>: <span class="token operator">&lt;</span>subject<span class="token operator">&gt;</span>
+</code></pre></div><ul><li>type用于说明 commit 的类别，使用下列标识</li></ul> <div class="language- extra-class"><pre class="language-text"><code>feat:     新功能
+fix:      修复
+docs:     文档变更
+style:    代码格式(不影响代码运行的变动)
+refactor: 重构(既不是增加feature，也不是修复bug)
+perf:     性能优化
+test:     增加测试
+chore:    构建过程或辅助工具的变动
+ci:       CI 相关的变化
+revert:   回退
+build:    打包
+</code></pre></div><ul><li>scope 用来说明本次Commit影响的范围，即简要说明修改会涉及的部分,比如数据层、控制层、视图层等</li> <li>subject 这次提交的简短描述</li></ul> <h2 id="随机生成commit-message"><a href="#随机生成commit-message" class="header-anchor">#</a> 随机生成commit message</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> commit -m<span class="token string">&quot;<span class="token variable"><span class="token variable">`</span><span class="token function">curl</span> -s http://whatthecommit.com/index.txt<span class="token variable">`</span></span>&quot;</span>
+</code></pre></div><h2 id="强制覆盖本地代码"><a href="#强制覆盖本地代码" class="header-anchor">#</a> 强制覆盖本地代码：</h2> <div class="language-bash extra-class"><pre class="language-bash"><code>// 本地代码重置为线上master分支<span class="token punctuation">(</span>会覆盖本地所有与远程仓库上同名文件<span class="token punctuation">)</span>
+<span class="token function">git</span> reset --hard origin/master
+</code></pre></div><h2 id="fetch"><a href="#fetch" class="header-anchor">#</a> fetch</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> remote <span class="token function">add</span> upstream ssh://git@120.78.197.207:7999/yqp/yqp-sa.git
+
+<span class="token function">git</span> fetch upstream
+
+<span class="token function">git</span> merge upstream/master
+
+</code></pre></div><p><a href="https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="noopener noreferrer">git<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="git-重新关联远程仓库地址的三种方法"><a href="#git-重新关联远程仓库地址的三种方法" class="header-anchor">#</a> Git 重新关联远程仓库地址的三种方法</h2> <p>1.修改命令</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">#查看关联的远程仓库</span>
+<span class="token function">git</span> remote -v
+
+<span class="token function">git</span> remote set-url origin <span class="token punctuation">[</span>url<span class="token punctuation">]</span> 
+
+例：git remote set-url origin XXX.git
+</code></pre></div><p>2.先删后加</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> remote <span class="token function">rm</span> origin 
+<span class="token function">git</span> remote <span class="token function">add</span> origin <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+
+例：git remote <span class="token function">add</span> origin XXX.git
+</code></pre></div><p>3.直接修改.git文件夹下的config文件</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">[</span>core<span class="token punctuation">]</span>
+    repositoryformatversion <span class="token operator">=</span> <span class="token number">0</span>
+    filemode <span class="token operator">=</span> <span class="token boolean">false</span>
+    bare <span class="token operator">=</span> <span class="token boolean">false</span>
+    logallrefupdates <span class="token operator">=</span> <span class="token boolean">true</span>
+    symlinks <span class="token operator">=</span> <span class="token boolean">false</span>
+    ignorecase <span class="token operator">=</span> <span class="token boolean">true</span>
+<span class="token punctuation">[</span>submodule<span class="token punctuation">]</span>
+    active <span class="token operator">=</span> <span class="token builtin class-name">.</span>
+<span class="token punctuation">[</span>remote <span class="token string">&quot;origin&quot;</span><span class="token punctuation">]</span>
+    url <span class="token operator">=</span> XXX.git
+    fetch <span class="token operator">=</span> +refs/heads/*:refs/remotes/origin/*
+<span class="token punctuation">[</span>branch <span class="token string">&quot;master&quot;</span><span class="token punctuation">]</span>
+    remote <span class="token operator">=</span> origin
+    merge <span class="token operator">=</span> refs/heads/master
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/14/2021, 5:19:55 PM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/git/git问题处理.html">
+        git问题处理
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.9c99df4e.js" defer></script><script src="/assets/js/2.a25f81b5.js" defer></script><script src="/assets/js/9.da4b5ab4.js" defer></script>
+  </body>
+</html>
